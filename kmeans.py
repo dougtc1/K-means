@@ -82,7 +82,7 @@ def kMeans(datos, n):
 	return clusters, centroides, lugarPuntos
 
 def iris(k):
-	datos, clasificacion = cargarArchivo('iris-normal.txt', ',')
+	datos, clasificacion = cargarArchivo('iris-data.txt', ',')
 	clusters, centroides, lugarPuntos= kMeans(datos, k)
 
 	for elem in clusters:
